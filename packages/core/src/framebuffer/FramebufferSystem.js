@@ -403,6 +403,7 @@ export class FramebufferSystem extends System
         if (!contextLost)
         {
             gl.deleteFramebuffer(fbo.framebuffer);
+
             if (fbo.stencil)
             {
                 gl.deleteRenderbuffer(fbo.stencil);
